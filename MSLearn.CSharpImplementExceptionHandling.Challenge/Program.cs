@@ -11,7 +11,14 @@ Console.WriteLine("Exit program");
 
 static void Process1()
 {
-    WriteMessage();
+    try
+    {
+        WriteMessage();
+    }
+    catch
+    {
+        Console.WriteLine("Exception caught in Process1");
+    }
 }
 
 static void WriteMessage()
